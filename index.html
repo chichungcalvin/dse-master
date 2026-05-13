@@ -78,7 +78,7 @@
             <button class="menu-btn" onclick="startStudy('quanxue')">勸學(節錄)</button>
             <button class="menu-btn" onclick="startStudy('shishuo')">師說</button>
             <button class="menu-btn" onclick="startStudy('lianpo')">廉頗藺相如列傳</button>
-            <button class="menu-btn disabled">論仁論孝論君子</button>
+            <button class="menu-btn" onclick="startStudy('lunyu')">論仁論孝論君子</button>
             <button class="menu-btn disabled">魚我所欲也</button>
             <button class="menu-btn disabled">出師表</button>
             <button class="menu-btn disabled">六國論</button>
@@ -327,6 +327,47 @@
         // 修辭
         { f: "「秦王竟酒」中的「竟酒」運用了甚麼修辭？", b: "手法：借代（指宴會結束）。", t: "修辭" },
         { f: "「不知將軍寬之至此也」<br>廉頗這句話表現出他甚麼性格？", b: "性格：勇於改過 / 坦率直爽。", t: "人物性格" }
+    ]
+},
+            lunyu: {
+    title: "論仁、論孝、論君子",
+    data: [
+        // 【論仁】
+        { f: "不可以久處<span class='highlight'>約</span>", b: "約：窮困 / 貧困的環境。", t: "字詞" },
+        { f: "<span class='highlight'>知</span>者利仁", b: "知：通「智」，聰明 / 有智慧的人。", p: "粵音：[zi3] (智)", t: "通假字" },
+        { f: "知者<span class='highlight'>利</span>仁", b: "利：利用 / 貪求仁德的好處。", t: "字詞" },
+        { f: "不以其<span class='highlight'>道</span>得之", b: "道：正確的方法 / 途徑。", t: "字詞" },
+        { f: "不以其道得之，不<span class='highlight'>處</span>也", b: "處：接受 / 享有。", t: "字詞" },
+        { f: "君子<span class='highlight'>去</span>仁，<span class='highlight'>惡乎</span>成名", b: "去：離棄 / 拋棄。<br>惡乎：何以 / 怎麼。", t: "字詞" },
+        { f: "無<span class='highlight'>終食之間</span>違仁", b: "終食之間：吃完一頓飯的時間（比喻極短時間）。", t: "字詞" },
+        { f: "<span class='highlight'>造次</span>必於是", b: "造次：匆忙 / 倉促。", t: "字詞" },
+        { f: "<span class='highlight'>顛沛</span>必於是", b: "顛沛：顛沛流離 / 困頓受挫。", t: "字詞" },
+        { f: "<span class='highlight'>克己復禮</span>為仁", b: "克己：克制私欲。<br>復禮：使言行合乎禮教。", t: "字詞" },
+        { f: "請其<span class='highlight'>目</span>", b: "目：綱目 / 要目 / 細則。", t: "字詞" },
+        { f: "回雖不<span class='highlight'>敏</span>", b: "敏：聰敏。", t: "字詞" },
+
+        // 【論孝】
+        { f: "今之孝者，是謂能<span class='highlight'>養</span>", b: "養：供養 / 養活。", p: "粵音：[joeng6] (樣)", t: "字詞" },
+        { f: "事父母<span class='highlight'>幾</span>諫", b: "幾：輕微 / 婉轉。", p: "粵音：[gei1] (機)", t: "字詞" },
+        { f: "又敬不<span class='highlight'>違</span>", b: "違：違抗 / 觸犯。", t: "字詞" },
+        { f: "<span class='highlight'>勞</span>而不怨", b: "勞：憂愁 / 擔憂。", t: "字詞" },
+        { f: "父母之年，不可不<span class='highlight'>知</span>也", b: "知：記住 / 紀念。", t: "字詞" },
+
+        // 【論君子】
+        { f: "君子不重則不<span class='highlight'>威</span>", b: "威：威嚴。", t: "字詞" },
+        { f: "學則不<span class='highlight'>固</span>", b: "固：鞏固（一說為固陋）。", t: "字詞" },
+        { f: "過則勿<span class='highlight'>憚</span>改", b: "憚：害怕 / 畏懼。", t: "字詞" },
+        { f: "君子<span class='highlight'>坦蕩蕩</span>", b: "坦蕩蕩：心胸舒坦寬廣。", t: "字詞" },
+        { f: "小人長<span class='highlight'>戚戚</span>", b: "戚戚：經常憂慮局促。", t: "字詞" },
+        { f: "君子<span class='highlight'>病</span>無能焉", b: "病：憂慮 / 慚愧。", t: "字詞" },
+        { f: "不病人之不<span class='highlight'>己知</span>也", b: "己知：了解自己（倒裝：知己）。", t: "句式" },
+        { f: "君子<span class='highlight'>義以為質</span>", b: "義以為質：以義作為處事原則。", t: "字詞" },
+        { f: "君子<span class='highlight'>恥</span>其言而過其行", b: "恥：以……為恥（意動用法）。", t: "詞類活用" },
+
+        // 修辭與對比
+        { f: "「君子坦蕩蕩，小人長戚戚」<br>運用了甚麼修辭？", b: "手法：對比、對偶。", t: "修辭" },
+        { f: "「非禮勿視，非禮勿聽，非禮勿言，非禮勿動」<br>運用了甚麼修辭？", b: "手法：排比。", t: "修辭" },
+        { f: "《論語》中「之」字的常見用法？", b: "1. 助詞：的（父母之年）<br>2. 代詞：他/它（不以其道得之）<br>3. 賓語前置標誌（句讀之不知）", t: "虛詞" }
     ]
 },
             xiaoyaoyou: {
