@@ -81,7 +81,7 @@ cursor: pointer; touch-action: manipulation; user-select: none; transition: 0.2s
 <button class="menu-btn" onclick="startStudy('lunyu')">論仁論孝論君子</button>
 <button class="menu-btn" onclick="startStudy('yuwo')">魚我所欲也</button>
 <button class="menu-btn" onclick="startStudy('chushibiao')">出師表</button>
-<button class="menu-btn disabled">六國論</button>
+<button class="menu-btn" onclick="startStudy('liuguolun')">六國論</button>
 <button class="menu-btn" onclick="startStudy('xiaoyaoyou')">逍遙遊(節錄)</button>
 <button class="menu-btn disabled">始得西山宴遊記</button>
 </div>
@@ -184,7 +184,7 @@ shisanshou: {
 },
         
 cisanshou: {
-    title: "詞三首（全量覆蓋版）",
+    title: "詞三首",
     data: [
         // 念奴嬌·赤壁懷古
         { f: "大江東<span class='highlight'>去</span>", b: "去：流去 / 奔流。", t: "念奴嬌" },
@@ -355,7 +355,7 @@ quanxue: {
 },
 
 shishuo: {
-    title: "師說（全量覆蓋版）",
+    title: "師說",
     data: [
         // 第一段：立論
         { f: "古之學者必有<span class='highlight'>師</span>", b: "師：老師。", t: "師說" },
@@ -585,8 +585,8 @@ yuwo: {
         { f: "則凡可以<span class='highlight'>得</span>生者", b: "得：獲得 / 保全。", t: "魚我所欲也" },
         { f: "何不<span class='highlight'>用</span>也", b: "用：採用 / 使用（任何手段）。", t: "魚我所欲也" },
         { f: "使人之所惡莫甚於死者，則凡可以<span class='highlight'>辟</span>患者", b: "辟：通「避」。", t: "魚我所欲也" },
-        { f: "由是則生而有不用也，<span class='highlight'>由是則可以辟患而有不為也</span>", b: "由是：通過這些（途徑 / 手段）。", t: "魚我所欲也" },
-        { f: "是故所欲有甚於生者，<span class='highlight'>所惡有甚於死者</span>", b: "甚：超過。", t: "魚我所欲也" },
+        { f: "由是則生而有不用也，<span class='highlight'>由是</span>則可以辟患而有不為也", b: "由是：通過這些（途徑 / 手段）。", t: "魚我所欲也" },
+        { f: "是故所欲有甚於生者，所<span class='highlight'>惡</span>有甚於死者", b: "甚：超過。", t: "魚我所欲也" },
 
         // --- 仁義本心 ---
         { f: "<span class='highlight'>非獨</span>賢者有是心也", b: "非獨：不單止 / 不僅。", t: "魚我所欲也" },
@@ -696,6 +696,63 @@ yuwo: {
     ]
 },
     
+    liuguolun: {
+    title: "六國論（全量地毯式覆蓋版）",
+    data: [
+        // --- 第一段：中心論點 ---
+        { f: "非<span class='highlight'>兵</span>不利", b: "兵：武器 / 兵器。", t: "六國論" },
+        { f: "戰不<span class='highlight'>善</span>", b: "善：好 / 妥當。", t: "六國論" },
+        { f: "<span class='highlight'>弊</span>在賂秦", b: "弊：弊端 / 毛病。", t: "六國論" },
+        { f: "賂秦而力<span class='highlight'>虧</span>", b: "虧：虧損 / 削弱。", t: "六國論" },
+        { f: "破滅之<span class='highlight'>道</span>也", b: "道：途徑 / 原因。", t: "六國論" },
+        { f: "六國<span class='highlight'>互喪</span>", b: "互喪：彼此相繼滅亡。", t: "六國論" },
+        { f: "<span class='highlight'>率</span>賂秦耶", b: "率：全都 / 大概。", t: "六國論" },
+        { f: "不能獨<span class='highlight'>完</span>", b: "完：保全。", t: "六國論" },
+
+        // --- 第二段：論賂秦之害 ---
+        { f: "小則獲<span class='highlight'>邑</span>", b: "邑：小城鎮。", t: "六國論" },
+        { f: "<span class='highlight'>其實</span>百倍", b: "其實：那實際數量 / 它的實際情況。", t: "六國論" },
+        { f: "諸侯之所大<span class='highlight'>患</span>", b: "患：憂慮 / 擔心。", t: "六國論" },
+        { f: "思<span class='highlight'>厥</span>先祖父", b: "厥：其 / 他們的。", t: "六國論" },
+        { f: "<span class='highlight'>暴</span>霜露，斬荊棘", b: "暴：通「曝」，暴露 / 曝曬。", p: "粵音：[buk6] (瀑)", t: "六國論" },
+        { f: "以有<span class='highlight'>尺寸</span>之地", b: "尺寸：形容極少量的土地。", t: "六國論" },
+        { f: "<span class='highlight'>舉</span>以予人", b: "舉：拿、拿出來。", t: "六國論" },
+        { f: "如棄<span class='highlight'>草芥</span>", b: "草芥：小草與垃圾（比喻微不足道的東西）。", t: "六國論" },
+        { f: "然後得一夕安<span class='highlight'>寢</span>", b: "寢：睡覺。", t: "六國論" },
+        { f: "起視四<span class='highlight'>境</span>", b: "境：邊境 / 國境。", t: "六國論" },
+        { f: "暴秦之欲無<span class='highlight'>厭</span>", b: "厭：通「饜」，滿足。", t: "六國論" },
+        { f: "奉之<span class='highlight'>彌</span>繁", b: "彌：更加。", t: "六國論" },
+        { f: "侵之<span class='highlight'>愈</span>急", b: "愈：更加。", t: "六國論" },
+        { f: "強弱勝負已<span class='highlight'>判</span>矣", b: "判：分辨 / 確定 / 分明。", t: "六國論" },
+        { f: "至於<span class='highlight'>顛覆</span>", b: "顛覆：滅亡 / 倒下。", t: "六國論" },
+        { f: "理<span class='highlight'>固</span>宜然", b: "固：本來 / 當然。", t: "六國論" },
+
+        // --- 第三段：論不賂者之喪 ---
+        { f: "齊人未<span class='highlight'>嘗</span>賂秦", b: "嘗：曾經。", t: "六國論" },
+        { f: "終繼五國<span class='highlight'>遷滅</span>", b: "遷滅：滅亡（古代指國都遷徙，引申為滅亡）。", t: "六國論" },
+        { f: "<span class='highlight'>與</span>嬴而不助五國也", b: "與：親附 / 結交。", t: "六國論" },
+        { f: "五國<span class='highlight'>既</span>喪", b: "既：已經。", t: "六國論" },
+        { f: "始有遠<span class='highlight'>略</span>", b: "略：謀略 / 策略。", t: "六國論" },
+        { f: "斯用兵之<span class='highlight'>效</span>", b: "效：成效 / 效果。", t: "六國論" },
+        { f: "至丹以荊卿為<span class='highlight'>計</span>", b: "計：計策 / 策略。", t: "六國論" },
+        { f: "始<span class='highlight'>速</span>禍焉", b: "速：招致 / 加速。", t: "六國論" },
+        { f: "後秦擊趙者<span class='highlight'>再</span>", b: "再：兩次。", t: "六國論" },
+        { f: "<span class='highlight'>李牧連卻之</span>", b: "卻：使……退卻 / 擊退。", t: "六國論" },
+        { f: "洎牧以讒誅", b: "洎：及至 / 等到。", p: "粵音：[gei6] (忌)", t: "六國論" },
+        { f: "洎牧以<span class='highlight'>讒</span>誅", b: "讒：讒言 / 毀謗的話。", t: "六國論" },
+        { f: "革滅<span class='highlight'>殆</span>盡", b: "殆：幾乎。", t: "六國論" },
+
+        // --- 第四、五段：總結與借古諷今 ---
+        { f: "勝負之<span class='highlight'>數</span>", b: "數：天數 / 命運。", t: "六國論" },
+        { f: "存亡之<span class='highlight'>理</span>", b: "理：道理 / 命運。", t: "六國論" },
+        { f: "<span class='highlight'>當</span>與秦相較", b: "當：倘若 / 如果。", t: "六國論" },
+        { f: "或未易<span class='highlight'>量</span>", b: "量：估量 / 預測。", t: "六國論" },
+        { f: "為國者無使為積威之所<span class='highlight'>劫</span>哉", b: "劫：脅迫 / 威嚇。", t: "六國論" },
+        { f: "<span class='highlight'>日削月割</span>", b: "日、月：天天、月月（名詞作狀語）。", t: "六國論" },
+        { f: "苟以天下之大", b: "苟：如果 / 假使。", t: "六國論" }
+    ]
+},
+    
     xiaoyaoyou: {
 title: "逍遙遊(節錄)",
 data: [
@@ -743,6 +800,58 @@ data: [
 { f: "不<span class='highlight'>夭</span>斤斧", b: "夭：摧折 / 砍伐。", p: "", t: "注釋 34" },
 { f: "<span class='highlight'>安</span>所困苦哉", b: "安：何 / 哪裏。", p: "", t: "注釋 35" },
 { f: "安所<span class='highlight'>困苦</span>哉", b: "困苦：艱難 / 艱苦。", p: "", t: "注釋 35" }
+    ]
+},
+    xishan: {
+    title: "始得西山宴遊記（全量覆蓋版）",
+    data: [
+        // --- 第一段：貶謫心境與尋常遊歷 ---
+        { f: "自余為<span class='highlight'>僇人</span>", b: "僇人：受過刑辱的人（罪人）。柳宗元因被貶，以此自嘲。", t: "始得西山" },
+        { f: "<span class='highlight'>居</span>是州", b: "居：居住 / 停留。", t: "始得西山" },
+        { f: "<span class='highlight'>恒惴慄</span>", b: "恒：經常。惴慄：恐懼 / 戰慄。", t: "始得西山" },
+        { f: "其<span class='highlight'>隙</span>也", b: "隙：空閒時間。", t: "始得西山" },
+        { f: "則<span class='highlight'>施施</span>而行", b: "施施：漫不經心的樣子 / 緩慢行走的樣子。", t: "始得西山" },
+        { f: "<span class='highlight'>漫漫</span>而遊", b: "漫漫：隨意的樣子。", t: "始得西山" },
+        { f: "日與其<span class='highlight'>徒</span>上高山", b: "徒：同伴 / 伴侶。", t: "始得西山" },
+        { f: "<span class='highlight'>窮</span>迴溪", b: "窮：走到盡頭（動詞活用）。", t: "始得西山" },
+        { f: "幽泉<span class='highlight'>怪</span>石", b: "怪：奇異 / 奇特。", t: "始得西山" },
+        { f: "到則<span class='highlight'>披</span>草而坐", b: "披：撥開 / 橫開。", t: "始得西山" },
+        { f: "<span class='highlight'>更</span>相枕以卧", b: "更：互相。", t: "始得西山" },
+        { f: "意有所<span class='highlight'>極</span>", b: "極：至 / 到達的地方。", t: "始得西山" },
+        { f: "夢亦同<span class='highlight'>趣</span>", b: "趣：通「趨」，往 / 趨向。", t: "始得西山" },
+        { f: "<span class='highlight'>覺</span>而起", b: "覺：睡醒。", t: "始得西山" },
+        { f: "以為凡是州之山有<span class='highlight'>異態</span>者", b: "異態：奇特的姿態 / 形態。", t: "始得西山" },
+        { f: "而<span class='highlight'>未始</span>知西山之怪特", b: "未始：未曾 / 未開始。", t: "始得西山" },
+
+        // --- 第二段：始得西山與攀登過程 ---
+        { f: "<span class='highlight'>因</span>坐法華西亭", b: "因：因為 / 由於。", t: "始得西山" },
+        { f: "始指<span class='highlight'>異</span>之", b: "異：感到奇怪（意動用法）。", t: "始得西山" },
+        { f: "<span class='highlight'>緣</span>染溪", b: "緣：沿著。", t: "始得西山" },
+        { f: "<span class='highlight'>斫</span>榛莽", b: "斫：砍伐。", t: "始得西山" },
+        { f: "焚<span class='highlight'>茅茷</span>", b: "茅茷：雜草 / 草叢。", t: "始得西山" },
+        { f: "<span class='highlight'>箕踞</span>而遨", b: "箕踞：隨便席地而坐（伸開雙腿像畚箕）。", t: "始得西山" },
+
+        // --- 第三段：西山之高與物我兩忘 ---
+        { f: "皆在<span class='highlight'>衽席</span>之下", b: "衽席：臥具（蓆子）。", t: "始得西山" },
+        { f: "<span class='highlight'>岈然</span>窪然", b: "岈然：深邃的樣子。窪然：低陷的樣子。", t: "始得西山" },
+        { f: "若<span class='highlight'>垤</span>若穴", b: "垤：蟻穴外的小土堆。", t: "始得西山" },
+        { f: "<span class='highlight'>尺寸千里</span>", b: "尺寸千里：眼前的尺寸之地，實際上是千里之遙。", t: "始得西山" },
+        { f: "<span class='highlight'>攢蹙</span>累積", b: "攢：聚集。蹙：收縮 / 緊迫。", t: "始得西山" },
+        { f: "莫得<span class='highlight'>遯</span>隱", b: "遯：通「遁」，隱藏。", t: "始得西山" },
+        { f: "<span class='highlight'>縈</span>青<span class='highlight'>繚</span>白", b: "縈、繚：纏繞。青：青山。白：白水。", t: "始得西山" },
+        { f: "外與天<span class='highlight'>際</span>", b: "際：交會 / 相接。", t: "始得西山" },
+        { f: "不與<span class='highlight'>培塿</span>為類", b: "培塿：小土丘。", t: "始得西山" },
+        { f: "<span class='highlight'>悠悠</span>乎與顥氣俱", b: "悠悠：遙遠無盡的樣子。", t: "始得西山" },
+        { f: "與<span class='highlight'>顥氣</span>俱", b: "顥氣：大自然的正氣 / 天地之氣。", t: "始得西山" },
+        { f: "莫得其<span class='highlight'>涯</span>", b: "涯：邊際。", t: "始得西山" },
+        { f: "<span class='highlight'>洋洋</span>乎與造物者遊", b: "洋洋：廣大無涯的樣子。", t: "始得西山" },
+        { f: "不知其所<span class='highlight'>窮</span>", b: "窮：盡頭。", t: "始得西山" },
+        { f: "引<span class='highlight'>觴</span>滿酌", b: "長：酒杯。", t: "始得西山" },
+        { f: "<span class='highlight'>頹然</span>就醉", b: "頹然：倒下的樣子（形容醉態）。", t: "始得西山" },
+        { f: "心凝形<span class='highlight'>釋</span>", b: "釋：解除束縛 / 形體消散。", t: "始得西山" },
+        { f: "與萬化<span class='highlight'>冥合</span>", b: "冥合：融合為一。", t: "始得西山" },
+        { f: "則知吾<span class='highlight'>嚮</span>之未始遊", b: "嚮：通「向」，從前。", t: "始得西山" },
+        { f: "故為之文以<span class='highlight'>志</span>", b: "志：記述 / 記錄。", t: "始得西山" }
     ]
 },
 };
